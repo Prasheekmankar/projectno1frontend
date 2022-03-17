@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import ResponsiveAppBar from "./appbar.js";
+import { Main } from "./appbar";
+import { Card } from "@mui/material";
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ResponsiveAppBar />
+      <Card sx={{ my: 2, backgroundColor: "aqua", display: "block" }}>
+        <div className="container">
+          <div className="contain">
+            <Main />
+          </div>
+        </div>
+      </Card>
     </div>
   );
 }

@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* .contain{
+    width: 100px;
+    height: 100px;
+    background: green;
+    position:sticky;
+    animation-name: example;
+    animation-duration: .8s;  
+    animation-delay: 0s;
+    animation-fill-mode:unset;
   }
-}
+  
+  
+  @keyframes example {
+    from {top: 20px; background-color: yellow;opacity:0;}
+    to {top: 0px; background-color: green;opacity:1;}
+  } */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+  .bikecontainer{
+margin-top: 1rem;
+margin-bottom: 1rem;
+  }
+  .Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:aqua;
+    gap: 3px;
+  }
+  .bike-poster{
+    object-fit:cover;
+    height:20rem;
+    width:20rem;
+    
+  }
+ body{
+   background-color: aqua;
+ }
+.card{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: .5rem;
 }
